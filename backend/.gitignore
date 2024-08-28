@@ -1,0 +1,19 @@
+# .NET Core
+bin/
+obj/
+*.swp
+*.user
+*.suo
+*.git
+.vs/
+.vscode/
+
+# ASP.NET Core
+appsettings*.json
+
+# Debug and Release Folders
+[Dd]ebug/
+[Rr]elease/
+
+# Node.js
+node_modules/

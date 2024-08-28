@@ -1,0 +1,6 @@
+@DiemHenTinhYeu.API_HostAddress = http://localhost:5191
+
+GET {{DiemHenTinhYeu.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
