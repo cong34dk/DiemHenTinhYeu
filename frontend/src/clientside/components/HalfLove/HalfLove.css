@@ -1,0 +1,109 @@
+.half_love-container{
+    height: 100%;
+    padding: 12px;
+}
+
+.submenu{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.submenu-hot{
+    width: calc(100% / 3);
+    border-bottom: 3px solid #4c71b5;
+}
+
+.submenu-online{
+    width: calc(100% / 3);
+
+}
+
+.submenu-search{
+    width: calc(100% / 3);
+
+}
+
+.submenu-item{
+    cursor: pointer;
+}
+
+.submenu-item:hover{
+    color: #4c71b5;
+}
+
+
+/* begin Love Card */
+
+.wrapper-half_love-card{
+    position: relative;
+    width: 100%;
+    height: 95%;
+}
+
+.half_love-card{
+    width: 85%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.half_love-card-display{
+    padding-bottom: 20px;
+    width: 100%;
+    height: 90%;
+    /* background-color: aqua; */
+}
+
+.half_love-card-display img{
+    width: 100%;
+    height: 100%;
+}
+
+.half_love-card-wrapper_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+}
+
+.half_love-card-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.half_love-card-button i {
+    font-size: 24px;
+}
+
+.btn-like i {
+    color: #28a745; 
+}
+
+.btn-skip i {
+    color: #dc3545; 
+}
+
+/* Hiệu ứng hover */
+.half_love-card-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
