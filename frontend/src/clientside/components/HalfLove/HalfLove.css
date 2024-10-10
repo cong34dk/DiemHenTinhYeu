@@ -14,7 +14,7 @@
 
 .submenu-hot{
     width: calc(100% / 3);
-    border-bottom: 3px solid #4c71b5;
+    border-bottom: 3px solid #FF6F61;
 }
 
 .submenu-online{
@@ -54,6 +54,7 @@
 }
 
 .half_love-card-display{
+    position: relative;
     padding-bottom: 20px;
     width: 100%;
     height: 90%;
@@ -63,6 +64,7 @@
 .half_love-card-display img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .half_love-card-wrapper_button{
@@ -106,4 +108,59 @@
 .half_love-card-button:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.half_love-card-display-info{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+}
+
+.icon-online {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #28a745;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+
+.half_love-card-display-info .numberOfPhotos{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+/* Thanh trạng thái (progress bar) */
+.progress-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    z-index: 10;
+}
+
+.progress-bar-item{
+    flex-grow: 1;
+    height: 4px;
+    background-color: #ccc;
+    margin: 0 5px;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+.progress-bar-item.active{
+    background-color: #fff; 
 }

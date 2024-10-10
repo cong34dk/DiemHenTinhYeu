@@ -1,0 +1,108 @@
+.chat-list-container {
+    padding: 15px;
+    background-color: #f7f7f7;
+    height: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--pink-dark);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.chat-list {
+    max-height: 80%;
+    overflow-y: auto; /* Thêm thanh cuộn dọc khi danh sách vượt quá chiều dài */
+    list-style: none;
+    padding: 0;
+}
+
+.chat-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.chat-item:hover {
+    background-color: var(--pink-light);
+}
+
+.chat-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.chat-avatar-large {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.chat-details {
+    flex-grow: 1;
+}
+
+.chat-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--pink-neon);
+}
+
+.chat-last-message {
+    font-size: 14px;
+    color: #666;
+}
+
+.chat-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.chat-detail {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-height: 80px;
+}
+
+.send-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: var(--pink-dark);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: var(--pink-light);
+}

@@ -1,0 +1,87 @@
+.myprofile-container{
+    width: 100%;
+    height: 100%;
+}
+
+.myprofile-container .basicinfo-wrapper{
+    width: 100%;
+    padding: 10px;
+}
+
+.myprofile-container .basicinfo-wrapper p{
+    text-align: center;
+}
+
+.myprofile-container .avatar-wrapper{
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.avatar-wrapper img {
+    margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.myprofile-container .change-avatar{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    color: white;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+/* Css panel */
+
+.panel-heading{
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    padding: 11px 14px;
+}
+
+.panel-title{
+    margin: 0;
+    font-size: 1.16667rem;
+    font-weight: 700;
+    color: #777580;
+}
+
+.panel-body{
+    padding: 10px;
+}
+
+.add-image-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.add-image-button:hover {
+    background-color: #0056b3;
+}
+
+.image-list{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.uploaded-image{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
