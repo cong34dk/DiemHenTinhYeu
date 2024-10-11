@@ -56,10 +56,11 @@ namespace DiemHenTinhYeu.API.Controllers
         {
             var claims = new[]
             {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-            new Claim("id", user.Id.ToString()),
-            new Claim(ClaimTypes.Role, user.Role)
-        };
+                new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                new Claim("id", user.Id.ToString()),
+                new Claim(ClaimTypes.Role, user.Role),
+                new Claim("username", user.Username)
+            };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
